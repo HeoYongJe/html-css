@@ -1,0 +1,29 @@
+html,body{
+  margin:0;
+  padding:0;
+  font-weight:300;
+  width:1000px;
+  margin:0 auto;
+  color:#555;
+  font-size:15px;
+  line-height:15px;
+}
+ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
+.pStrong{
+  color:#F96902;
+  font-weight:500;
+  /*문장강조*/
+}
+.wordStrong{
+  color:rgb(20, 53, 112);
+  font-weight:500;
+  /*문장강조*/  
+}
+h1{
+  margin-bottom: 50px;
+}
+article{
+  padding-bottom: 40px;
+  margin-bottom:40px;
+  border-bottom: 2px solid #f5f5f5;
+}
