@@ -2,19 +2,25 @@ html,body{
   margin:0;
   padding:0;
   font-weight:300;
-  width:1000px;
   margin:0 auto;
   color:#555;
   font-size:15px;
-  line-height:15px;
+}
+.respons{
+  max-width:1000px;
+  margin:0 auto;
+  padding:50px 20px;
+}
+h1{
+  font-size:30px;
 }
 ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
-.pStrong{
+.wordStrong{
   color:#F96902;
   font-weight:500;
-  /*문장강조*/
+  /*단어강조*/
 }
-.wordStrong{
+.pStrong{
   color:rgb(20, 53, 112);
   font-weight:500;
   /*문장강조*/  
@@ -26,4 +32,19 @@ article{
   padding-bottom: 40px;
   margin-bottom:40px;
   border-bottom: 2px solid #f5f5f5;
+}
+img{
+  max-width:500px;
+  width:100%;
+  display:block;
+  margin:20px 0;
+}
+.day2_ex_ul{
+  display:flex;
+}
+.day2_ex_ul li{
+  width:100px;
+  height:100px;
+  background:orange;
+  margin:10px;
 }
