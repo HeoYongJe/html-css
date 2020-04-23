@@ -39,6 +39,9 @@ img{
   display:block;
   margin:20px 0;
 }
+p{
+  line-height:1.5em;
+}
 .day2_ex_ul{
   display:flex;
 }
