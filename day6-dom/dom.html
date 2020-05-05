@@ -24,6 +24,32 @@
             <li><span class="wordStrong">텍스트 노드</span></li>
         </ul>
     </article>
+    <article>
+        <h2>id로 요소 노드 취득</h2>
+        <p><span class="wrodStrong">getElementById 메소드는 Document.prototype의 프로퍼티이다.</span> 따라서 반드시 문서 노드 document를 통해 호출해야 한다.</p>
+        <p><img src="../img/id_get.png" alt="id_get explain"></p>
+        <ul>
+            <li class="pStrong">결과</li>
+            <li>A</li>
+            <li style="color:red">B</li>
+            <li>C</li>
+        </ul>
+        <p>HTML 문서 내에는 중복된 id 값을 갖는 요소가 여러 개 존재한다 하더라도 getElementById 메소드는 인수로 전달된 id 값을 갖는 첫번째 요소 노드만을 반환한다. <span class="wordStrong">(*언제나 단 하나의 요소 노드를 반환한다)</span></p>
+    </article>
+    <article>
+        <h2>CSS 선택자로 요소 노드 취득</h2>
+        <p>querySelector 메소드는 인수로 전달한 CSS 선택자를 만족시키는 하나의 요소 노드를 탐색하여 반환한다.</p>
+        <p>만약 인수로 전달한 CSS 선택자를 만족시키는 요소 노드가 여러 개인 경우, 첫번째 요소 노드만 반환한다.</p>
+        <p><img src="../img/query_get.png" alt="querySelector explain"></p>
+        <ul>
+            <li class="pStrong">결과</li>
+            <li>A</li>
+            <li style="color:red">B</li>
+            <li>C</li>
+        </ul>
+        <p>CSS 선택자 문법을 사용하는 querySelector, querySelectorAll 메소드는 구체적인 조건으로 요소 노드를 취득할 수 있고 일관된 방식으로 요소 노드를 취득할 수 있다는 장점이 있다.</p>
+        <p>id가 있는 요소를 취득하는 경우에는 getElementById 메소드를 사용하고 그 외의 경우에는 querySelector, querySelectorAll 메소드를 사용하는 것을 추천한다.</p>
+    </article>
   </section>
 </body>
 </html>    
