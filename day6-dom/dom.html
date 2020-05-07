@@ -56,9 +56,24 @@
             <li class="fru">참외</li>
             <li class="fru">메론</li>
             <li class="fru">과일</li>
+            <li class="fru">포도</li>
         </ul>
     </article>
-  </section>
+    <article>
+        <h2>textContent</h2>
+        <p id="foo"></p>
+        <p>요소 노드의 textContent 프로퍼티에 문자열을 할당하면 요소 노드의 모든 자식 노드가 제거되고 할당한 문자열이 텍스트로 추가된다.</p>
+    </article>
+    <article>
+        <h2>DOM조작</h2>
+        <h3>innerHTML</h3>
+        <ul id="innerNode">
+            <li>apple</li>
+        </ul>
+        <h3>insertAdjacentHTML</h3>
+        <p>기존 요소에는 영향을 주지 않고 새롭게 삽입될 요소만을 파싱하여 DOM에 반영하므로 기존의 자식노드를 모두 제거하고 처음부터 생성하여 반영하는 innerHTML 프로퍼티보다 효율적이다.</p>
+    </article>
+</section>
   <script src="../js/dom.js"></script>
 </body>
 </html>    
