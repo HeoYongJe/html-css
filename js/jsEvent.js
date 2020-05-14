@@ -1,13 +1,3 @@
-// const $btn01 = document.querySelector('.btn01');
-
-// $btn01.onclick = function(){
-//   alert('경고창입니다');
-// };
-
-// $btn01.onblur = function(){
-//   this.style.color = 'blue';
-// }
-// const btnA = new $btn01;
 
 const $button = document.querySelector('.btn01');
 
