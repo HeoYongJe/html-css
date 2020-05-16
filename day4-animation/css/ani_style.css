@@ -1,0 +1,25 @@
+.aniBoxArea{
+    overflow:hidden;
+}
+.aniBoxArea li{
+    width:30px;
+    background:orange;
+    border-radius: 10px;
+    margin:30px;
+    padding:50px;
+    animation:movemove 2s 2s;
+}
+@keyframes movemove{
+    0% {
+        transform:translate(100px, 100px);
+        background:yellow;
+    }
+    50% {
+        transform:translate(70px,70px);
+        background:blanchedalmond;
+    }
+    100% {
+        transform:translate(40px,40px);
+        background:skyblue;
+    }
+}
