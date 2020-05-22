@@ -1,9 +1,8 @@
-// const $aniBoxArea = document.getElementById('aniBoxArea');
 const $aniBox = document.querySelector('.aniBox');
 const $aniBoxArea = document.getElementById('aniBoxArea');
 const aniClick = $aniBox;
 
-$aniBox.onclick = function() {
+$aniBox.onclick = function(event) {
     for(let i = 0; i < $aniBoxArea.length; i++){
         if($aniBoxArea < 1){
             this.style.transform = 'rotate(180deg)';
