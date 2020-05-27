@@ -7,17 +7,21 @@ const $aniBoxArea = document.getElementById('aniBoxArea');
 
 $aniBox1.onclick = function() {
     for(let i = 0; i < 1; i++){
-        if(i < 0){
+        if(i < 1){
             this.style.transform = 'rotate(180deg)';
             this.style.background = 'yellow';
             this.style.transtion = '1s';
         }
-        else{
-            this.style.transform = 'rotate(-180deg)';
-            this.style.background = 'blue';                
-        }
     }      
 };
+// $aniBox1.onclick = function() {
+//     for(let i = 0; i < 1; i++){
+//         if(i < 0){
+//             this.style.transform = 'rotate(-180deg)';
+//             this.style.background = 'orange'; 
+//         }
+//     }      
+// };
 
 // console.log(event.target)
 
