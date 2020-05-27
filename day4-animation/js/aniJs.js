@@ -1,33 +1,36 @@
-const $aniBox = document.querySelector('.aniBox');
+const $aniBox1 = document.querySelector('.aniBox1');
+const $aniBox2 = document.querySelector('.aniBox2');
+const $aniBox3 = document.querySelector('.aniBox3');
+const $aniBox4 = document.querySelector('.aniBox4');
 const $aniBoxArea = document.getElementById('aniBoxArea');
-const aniClick = $aniBox;
+// const aniClick = $aniBox;
 
-$aniBox.onclick = function(event) {
-    for(let i = 0; i < $aniBoxArea.length; i++){
-        if($aniBoxArea < 1){
+$aniBox1.onclick = function() {
+    for(let i = 0; i < 1; i++){
+        if(i < 0){
             this.style.transform = 'rotate(180deg)';
             this.style.background = 'yellow';
             this.style.transtion = '1s';
         }
         else{
             this.style.transform = 'rotate(-180deg)';
-            this.style.background = 'orange';                
+            this.style.background = 'blue';                
         }
     }      
 };
 
-console.log(event.target)
+// console.log(event.target)
 
-$aniBox.addEventListener('click', event => {
-    for(let i = 0; i < $aniBox.length; i++){
-        if($aniBox < 2){
-            this.style.transform = 'rotate(180deg)';
-            this.style.background = 'yellow';
-            this.style.transtion = '1s';
-        }
-        else{
-            this.style.transform = 'rotate(-180deg)';
-            this.style.background = 'orange';                
-        }
-    }      
-});
+// $aniBox.addEventListener('click', event => {
+//     for(let i = 0; i < $aniBox.length; i++){
+//         if(){
+//             this.style.transform = 'rotate(180deg)';
+//             this.style.background = 'yellow';
+//             this.style.transtion = '1s';
+//         }
+//         else{
+//             this.style.transform = 'rotate(-180deg)';
+//             this.style.background = 'orange';                
+//         }
+//     }      
+// });
