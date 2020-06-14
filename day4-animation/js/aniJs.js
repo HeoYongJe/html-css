@@ -6,8 +6,8 @@ const $aniBoxArea = document.getElementById('aniBoxArea');
 // const aniClick = $aniBox;
 const isListOpen = () => ([...$aniBoxArea > li.classList].includes('listOpen'));
 function setListOpenStatus() {
-    for(let i = 0; i < 1; i++){
-        if(i < 1){
+    for(let i = 0; i < $aniBoxArea.length; i++){
+        if(){
             this.style.transform = 'rotate(180deg)';
             this.style.background = 'yellow';
             this.style.transtion = '1s';
