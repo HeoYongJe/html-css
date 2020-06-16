@@ -1,4 +1,4 @@
-const $aniBoxLi = document.querySelectorAll('.aniBox')
+const $aniBoxLi = document.querySelector('.aniBox')
 const $aniBox1 = document.querySelector('.aniBox1');
 const $aniBox2 = document.querySelector('.aniBox2');
 const $aniBox3 = document.querySelector('.aniBox3');
@@ -7,7 +7,7 @@ const $aniBoxArea = document.getElementById('aniBoxArea');
 
 // const aniClick = $aniBox;
 // const isListOpen = () => ([...$aniBoxArea > li.classList].includes('listOpen'));
-$aniBoxLi.mousenter = function() {
+const aniBoxLiArea = () => {
 
     for(let i = 0; i < $aniBoxArea.length; i++){
         if(i < 1){
@@ -22,3 +22,6 @@ $aniBoxLi.mousenter = function() {
         }
     };
 };
+
+
+$aniBoxLi.addEventListener('click', () => aniBoxLiArea());
