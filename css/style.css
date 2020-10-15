@@ -20,6 +20,11 @@ ul,li,dl,dt,dd{margin:0;padding:0;list-style:none;}
   font-weight:500;
   /*단어강조*/
 }
+table {
+  width: 100%;
+  text-align: center;
+  max-width: 500px;
+}
 .pStrong{
   color:rgb(20, 53, 112);
   font-weight:550;
