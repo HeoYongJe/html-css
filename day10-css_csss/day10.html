@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>html / css</title>
+</head>
+<body>
+  <section>
+  <h1>css와 scss의 차이</h1>    
+    <article>
+      <ul class="list-ex">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </article>
+    <article>
+      <h2>css</h2>
+      <p>
+        .list {width: 100px;}<br>
+        li {color: orrange;}<br>
+        li:last-child {margin: 100px;}<br>   
+      </p>
+    </article>
+    <article>
+      <h2>scss</h2>
+     <p>
+        .list { <br>
+          width: 100px;<br>
+          li {<br>
+            color: red;<br>
+            &:last-child {<br>
+            margin:100px;<br>
+          }<br>
+        }<br>
+      }<br>
+     </p>
+     <p>css와 비교해보면 조금 다른 것을 알 수 있다 / sass 보단 css와 비슷한 구문을 가지고 있으며, css의 상위호환 스타일시트로 볼 수 있다</p>
+     <p>sass기능을 지원하되, css와 비슷한 문법으로 사용된다는 점에서 좀 더 쉽게 접근할 수 있다</p>
+    </article>
+  </section>
+</body>
+</html>
