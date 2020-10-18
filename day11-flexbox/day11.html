@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>html / css</title>
+</head>
+<body>
+  <section class="day11_section">
+  <h1>Flexbox</h1>
+    <article>
+      <h2>float</h2>
+      <p>float의 원래 목적은 이미지와 텍스트를 어떻게 배치 할 것인가에 대해 정리하기 위한 것</p>
+    </article>
+    <article>
+      <h2>flexbox</h2>
+      <ul>
+        <li><strong>컨테이너에 적용되는 속성 값</strong>
+          <ul>
+            <li>display</li>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+          </ul>
+        </li>
+        <li><strong>아이템에 적용되는 속성 값</strong>
+          <ul>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex</li>
+            <li>align-self</li>
+          </ul>
+        </li>
+      </ul>
+      <p>중심축과 반대축에 대해 이해해야 한다</p>
+    </article>
+    <article>
+       <!-- div.container>div.item.item${$}*10 //-->
+       <div class="container">
+         <div class="item item1">1</div>
+         <div class="item item2">2</div>
+         <div class="item item3">3</div>
+         <div class="item item4">4</div>
+         <div class="item item5">5</div>
+         <div class="item item6">6</div>
+         <div class="item item7">7</div>
+         <div class="item item8">8</div>
+         <div class="item item9">9</div>
+         <div class="item item10">10</div>
+       </div>
+       <!-- flex-flow: row wrap // flex-direction 과 flex-wrap를 따로쓰지 않고 한번에-->
+       <!-- justify-content: 많이쓰이는 부분 space-around :동일한 간격 // space-between:양옆 공간 없이 다 붙은 뒤 사이 중간에만 동일한 간격 //-->
+       <!-- justify-content 는 중심축에서 아이템을 배치 -->
+       <!-- align-centent는 반대축에서 아이템을 배치 -->
+      </article>
+  </section>
+</body>
+</html>

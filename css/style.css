@@ -57,3 +57,47 @@ p{
   margin:10px;
 }
 .orange{color:orange;}
+
+/* day11 */
+.day11_section .container{
+  background: beige;
+  height:100vh;
+  display:flex;
+  /* flex-direction:row 기본값이면 왼쪽에서 오른쪽 */
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.day11_section .item{
+  width:40px;
+  height:40px;
+}
+.day11_section .item1{
+  background:#111;
+}
+.day11_section .item2{
+  background:#222;
+}
+.day11_section .item3{
+  background:#333;
+}
+.day11_section .item4{
+  background:#444;
+}
+.day11_section .item5{
+  background:#555;
+}
+.day11_section .item6{
+  background:#aaa;
+}
+.day11_section .item7{
+  background:#bbb;
+}
+.day11_section .item8{
+  background:#ccc;
+}
+.day11_section .item9{
+  background:#ddd;
+}
+.day11_section .item10{
+  background:#eee;
+}
