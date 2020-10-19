@@ -101,3 +101,35 @@ p{
 .day11_section .item10{
   background:#eee;
 }
+
+/* day12 */
+.container_day12{
+  display:flex;
+  flex-direction: column;
+}
+.container_day12 header{
+  border-bottom:1px solid #eee;
+  text-align: center;
+}
+.container_day12 footer{
+  border-top:1px solid #eee;
+  text-align: center;
+  padding: 50px 0;
+}
+.container_day12 .content{
+  display:flex;
+  height:200px;
+  align-items:center;
+}
+.container_day12 .content nav{
+  border-right:1px solid #eee;
+}
+.container_day12 .content main{
+}
+.container_day12 .content aside{
+  border-left:1px solid #eee;
+}
+.container_day12 nav,aside{
+  flex-basis:150px;
+  flex-shrink:0;    /*기본값은1 ; */
+}
