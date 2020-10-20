@@ -133,3 +133,17 @@ p{
   flex-basis:150px;
   flex-shrink:0;    /*기본값은1 ; */
 }
+
+
+/* day13 */
+.container_day13 a{
+  font-size:30px;
+  display:inline-block;
+  transition-property: all;   /*a 태그에 대해 모든 효과에 대한 변화가 일어났을 때 전환이 일어난다*/
+  /* transition-property: transform; 이렇게 되면 transform 효과에 대해서만 장면 전환을 한다는 뜻  */
+  transition-duration: 0.5s;
+}
+.container_day13 a:active{
+  transform:translate(100px,100px);
+  font-size:20px;
+}
