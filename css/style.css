@@ -147,3 +147,14 @@ p{
   transform:translate(100px,100px);
   font-size:20px;
 }
+
+/* day14 */
+.container_day14 li{
+  color:red;
+}
+#idsel{
+  color:blue;
+}
+.classsel{
+  color:green;
+}
