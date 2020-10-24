@@ -158,3 +158,26 @@ p{
 .classsel{
   color:green;
 }
+
+/* day15 */
+.container_day15 h1{
+  display:none;
+}
+.container_day15{
+  background:orange;
+  left:20px;
+  top:20px;
+  position: relative;
+}
+.container_day15 div{
+  width:50px;
+  height:50px;
+  margin-bottom:20px;
+  background:skyblue;
+}
+.container_day15 .box{
+  background:yellow;
+  left:20px;
+  top:20px;
+  position: absolute;
+}
