@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>html / css</title>
+  <script src="../js/modernizr-custom.js"></script>
+</head>
+<body>
+  <section class="container_day17">
+    <h1>canvas</h1>
+    <article>
+      <p>엘리먼트를 통해 그래픽을 그리기위한 수단</p>
+      <p>기본적으로 2D그래픽에 중점을 두고 있다</p>  
+      <p>기본적으로 색을 가지고 있지 않다</p>
+      <ul>
+        <li><strong>Context</strong></li>
+        <li>Context는 어떠한 작업을 하기 위해 필요한 정보를 가지고 있는 것</li>
+        <li>Canvas를 통해 그림을 그릴 때는 Context 객체를 먼저 얻어오고 이 객체에 그릴 것에 대한 데이터를 담아주면 브라우저가 그림을 그린다</li>
+      </ul>
+      <ul>
+        <li><strong>fillRect //+추가이해</strong></li>
+        <li><strong>clearRect //+추가이해</strong></li>
+        <li><strong>strokeRect //+추가이해</strong></li>
+      </ul>
+    </article>
+    <article>
+      <canvas id="myCanvas" width="600" height="400">이 브라우저는 캔버스를 지원하지 않습니다.</canvas>
+      <!-- <canvas class="canvas" width="600" height="400"></canvas>    -->
+         <!-- 고해상도의 이미지를 표현하기 위해 캔버스 자체의 width / height 값을 css지정값의 두배로 해주는 경우가 있다  -->
+         <!-- 하지만 그만큼 연산이 많아지기 때문에 성능적으로 떨어진다 -->
+         <!-- 성능위주인지 디자인 위주인지 영향이 없는지 판단하에 css 이용하여 조절해서 사용 -->
+        </article>
+  </section>
+  <script>
+    // if (Modernizr.canvas) {
+    //   console.log('Canvas를 지원하는 브라우저');
+    // };
+    const canvas = document.getElementById('myCanvas');
+    const context = myCanvas.getContext('2d');
+    
+    // if(canvas.getContext){
+    //   console.log('캔버스 지원');
+    // };
+    //Modernizr 이 아니더라도 지원여부를 위처럼 확인 할 수있다
+
+    context.fillStyle = 'orange';
+    context.fillRect(0, 0, 100, 100);
+  </script>
+
+</body>
+</html>

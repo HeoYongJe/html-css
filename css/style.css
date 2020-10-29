@@ -181,3 +181,9 @@ p{
   top:20px;
   position: absolute;
 }
+
+/* day17 */
+.container_day17 #myCanvas{
+
+  background:#eee;
+}
