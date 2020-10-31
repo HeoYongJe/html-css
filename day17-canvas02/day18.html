@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>html / css</title>
+  <script src="../js/modernizr-custom.js"></script>
+</head>
+<body>
+  <section class="container_day18">
+    <h1>canvas</h1>
+
+    </article>
+  </section>
+  <script>
+    class App{
+      constructor(){  
+        const canvas = document.getElementById('myCanvas');
+        const ctx = myCanvas.getContext('2d');
+        
+        window.addEventListener('resize', this.resize.bind(this),false);
+        this.resize();
+        
+        requestAnimationFrame(this.animate.bind(this));
+      };
+
+      resize() {
+        this.stageWidth = document.body.clientWidth;
+        this.stageheight = document.body.clientHeight;
+
+        this.canvas.width = this.stageWidth * 2;
+        this.canvas.height = this.stageheight * 2;
+        this.ctx.scale(2, 2);
+      }
+
+      animate(t){
+        this.ctx.clearRect(0, 0, this.stageWidth, this.stageheight);
+        requestAnimationFrame(this.animate.bind(this));
+      }
+    };    
+
+    window.onload = () => {
+      new App();
+    }
+  </script>
+
+</body>
+</html>
