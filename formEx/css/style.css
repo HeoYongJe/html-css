@@ -1,0 +1,178 @@
+@charset "utf-8";
+@import url(common.css);
+
+body {
+	background-color: #f5f6f7;
+}
+.wrap {
+	width: 460px;
+	margin: 0 auto;
+}
+.logo {
+	width: 240px;
+	margin: 0 auto;
+	padding: 59px 0;
+}
+.logo a {
+	display: block;
+	height: 50px;
+	text-indent: -9999em;
+	background: url(../img/logo.gif) no-repeat 50% 50%;
+	
+}
+
+.join {
+
+}
+.join fieldset {
+	border: 1px solid #dadada;
+	background-color: #fff;
+	margin-bottom: 10px;
+	
+	text-align: left;
+}
+.join fieldset.last {
+	margin-bottom: 56px;
+}
+.join fieldset .field {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 8px 12px;
+}
+.join fieldset .field.last {
+	border-bottom: 0;
+}
+.join fieldset .field.field-id{
+	background: url(../img/ico_join3.png) no-repeat 96.9% -46px;
+}
+.join fieldset .field.field-pw{
+	background: url(../img/ico_join3.png) no-repeat 96.9% -466px;
+}
+.join fieldset .field.field-pw2{
+	background: url(../img/ico_join3.png) no-repeat 96.9% -515px;
+}
+.join fieldset .field .inpfield {
+	width: 338px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	border: 0;
+	padding-left: 3px;
+	color: #999;
+	
+}
+.join fieldset .field .selfield {
+	width: 90px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	border: 0;
+	padding-left: 3px;
+	color: #999;
+	
+	background: url(../img/sel_arr.gif) no-repeat 100% 50%;
+	-webkit-appearance: none;
+}
+.join fieldset .field.fieldRdo {
+	position: relative;
+	height: 33px;
+}
+.join fieldset .field.fieldRdo .field-rdo label {
+	position: absolute;
+	top: 8px;
+	z-index: 1;
+	width: 212px;
+	height: 31px;
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	color: #999;
+	text-align: center;
+	line-height: 31px;
+}
+.join fieldset .field.fieldRdo .field-rdo input {
+	position: absolute;
+}
+.join fieldset .field.fieldRdo .field-rdo label.male {left: 15px}
+.join fieldset .field.fieldRdo .field-rdo label.female {right: 15px; width: 213px}
+.join fieldset .field.fieldBirth {
+	position: relative;
+}
+.join fieldset .field.fieldBirth label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 53px;
+	height: 48px;
+	border-right: 1px solid #efefef;
+	background-color: #f7f7f7;
+	color: #999;
+	text-align: center;
+	line-height: 49px;
+}
+.join fieldset .field.fieldBirth .fieldBirth-area {
+	display: table;
+	margin-left: 68px;
+}
+.join fieldset .field.fieldBirth .fieldBirth-area .inpfield,
+.join fieldset .field.fieldBirth .fieldBirth-area .month {
+	display: table-cell;
+	vertical-align: middle;
+}
+.join fieldset .field.fieldMobile {
+	position: relative;
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+.btn.btn-submit {
+	width: 100%;
+	height: 61px;
+	background: #1fbc02 url(../img/btn_join2.gif) no-repeat 50% 0;
+	text-indent: -9999em;
+}
+.btn.btn-confirm {
+	position: absolute;
+	right: 15px;
+	top: 8px;
+	width: 99px;
+	height: 31px;
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	text-align: center;
+	line-height: 31px;
+}
+
+#footer {
+	padding: 40px 0 50px;
+	text-align: center;
+}
+#footer .btmnav {
+	margin-bottom: 10px;
+}
+#footer .btmnav dd {
+	display: inline;
+	font-size: 11px;
+}
+#footer .btmnav dd:after {
+	content: '|';
+	padding: 0 0 0 3px;
+	color: #cfcfcf;
+}
+#footer .btmnav dd.last:after {
+	content: '';
+}
+#footer .copy {
+	width: 260px;
+	margin: 0 auto;
+	padding-left: 70px;
+	background: url(../img/ci_naver.gif) no-repeat 0 50%;
+	font: 10px Verdana, sans-serif;
+}
+.w100per {width: 100% !important}
+.w310 {width: 310px !important}
+.w200 {width: 200px !important}
+.w130 {width: 130px !important}
+.w115 {width: 115px !important}
