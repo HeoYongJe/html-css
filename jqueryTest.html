@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="./css/jqStyle.css">
     <title>반응형 header</title>
+    <style>
+        h1 {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainNav ul {
+            display: flex;
+            text-align: left;
+            justify-content: space-evenly;
+        }
+
+        .mainNav ul .navItemList {
+            width: 25%;
+        }
+
+        .mainNav ul li a:nth-child(0) {
+            padding: 10px 0;
+        }
+
+        header .mainNav .subNav {
+            display: none;
+            padding-top: 10px;
+            background: #eee;
+            max-height: 150px;
+            height: 100%;
+        }
+
+        .subNav ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subNav li {
+            padding: 5px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>반응형 header 만들기</h1>
         <div class="mainNav">
+            <h1>반응형 header 만들기</h1>
             <ul>
-                <li>과일
-                    <ul>
-                        <li><a href="#">바나나</a></li>
-                        <li><a href="#">딸기</a></li>
-                        <li><a href="#">사과</a></li>
-                    </ul>
+                <li class="navItemList">
+                    <a href="#">과일</a>
+                    <div class="subNav">
+                        <ul>
+                            <li><a href="#">바나나</a></li>
+                            <li><a href="#">딸기</a></li>
+                            <li><a href="#">사과</a></li>
+                        </ul>
+                    </div>
+
                 </li>
-                <li>자동차
-                    <ul>
-                        <li><a href="#">벤츠</a></li>
-                        <li><a href="#">BMW</a></li>
-                        <li><a href="#">아우디</a></li>
-                    </ul>
+                <li class="navItemList"><a href="#">자동차</a>
+                    <div class="subNav">
+                        <ul>
+                            <li><a href="#">벤츠</a></li>
+                            <li><a href="#">BMW</a></li>
+                            <li><a href="#">아우디</a></li>
+                        </ul>
+                    </div>
+
                 </li>
-                <li>사계절
-                    <ul>
-                        <li><a href="#">봄</a></li>
-                        <li><a href="#">여름</a></li>
-                        <li><a href="#">가을</a></li>
-                        <li><a href="#">겨울</a></li>
-                    </ul>
+                <li class="navItemList"><a href="#">계절</a>
+                    <div class="subNav">
+                        <ul>
+                            <li><a href="#">봄</a></li>
+                            <li><a href="#">여름</a></li>
+                            <li><a href="#">가을</a></li>
+                            <li><a href="#">겨울</a></li>
+                        </ul>
+                    </div>
+
                 </li>
-                <li>집
-                    <ul>
-                        <li><a href="#">아파트</a></li>
-                        <li><a href="#">빌라</a></li>
-                        <li><a href="#">오피스텔</a></li>
-                    </ul>
+                <li class="navItemList"><a href="#">집</a>
+                    <div class="subNav">
+                        <ul>
+                            <li><a href="#">아파트</a></li>
+                            <li><a href="#">빌라</a></li>
+                            <li><a href="#">오피스텔</a></li>
+                        </ul>
+                    </div>
+
                 </li>
             </ul>
         </div>
     </header>
 </body>
+
 </html>
